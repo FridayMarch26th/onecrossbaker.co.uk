@@ -1,0 +1,113 @@
+:root {
+  --bg: #f7f6f4;
+  --ink: #3a3a42; /* off-black, not a hard #000 */
+  --muted: #6b6b70;
+  --accent: #d41f1f; /* the red of the cross in the logo */
+  --measure: 34rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141416;
+    --ink: #e4e4e9;
+    --muted: #9a9aa1;
+    --accent: #f04444;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 2rem 1.25rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--ink);
+  /* EB Garamond has a small x-height, so it carries a slightly larger size
+     and looser leading than a Georgia-style stack would. */
+  font: 400 1.1875rem/1.7 "EB Garamond", ui-serif, Georgia, "Iowan Old Style", serif;
+}
+
+.holding {
+  width: 100%;
+  max-width: var(--measure);
+  text-align: center;
+}
+
+.holding__image {
+  display: block;
+  width: 100%;
+  max-width: 18rem;
+  /* keeps a true circle even if a non-square image is swapped in */
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+}
+
+.holding__title {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.holding__text p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  text-wrap: pretty;
+}
+
+.holding__text p:last-child { margin-bottom: 0; }
+
+.holding__social {
+  margin: 2.25rem 0 0;
+}
+
+/* Circular icon button, echoing the round crop on the image above. */
+.roundel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.875rem;
+  height: 2.875rem;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  color: var(--muted);
+  transition: color 0.18s ease, background-color 0.18s ease;
+}
+
+.roundel svg {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+
+.roundel:hover,
+.roundel:focus-visible {
+  color: var(--accent);
+  background-color: color-mix(in srgb, var(--accent) 9%, transparent);
+}
+
+.roundel:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.holding__contact {
+  margin: 2rem 0 0;
+  font-size: 0.9375rem;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 0.15em;
+}
+
+a:hover { text-decoration: none; }

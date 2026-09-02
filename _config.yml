@@ -1,24 +1,21 @@
 title: One Cross Baker
 description: >-
-  Probably baking something, back in a bit...
+  Baking in Forest Gate, London.
 url: "https://www.onecrossbaker.co.uk"
 baseurl: ""
 
-# Uncomment to show a contact address in the theme footer.
+# Uncomment to show a contact address under the paragraph.
 # email: you@example.com
 
-theme: minima
+# Instagram handle only — the layout builds the profile URL.
+instagram: onecrossbaker
 
-# minima 2.5 uses pre-module Sass syntax; don't warn about the theme's own code.
-sass:
-  quiet_deps: true
-  silence_deprecations:
-    - import
-    - global-builtin
-    - color-functions
+# Site-wide default image. index.md can override it with its own `image:`.
+image: /assets/images/holding.jpg
+
+# No theme gem — the whole site is _layouts/default.html + assets/css/style.css.
 
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
