@@ -1,0 +1,30 @@
+title: One Cross Baker
+description: >-
+  Probably baking something, back in a bit...
+url: "https://www.onecrossbaker.co.uk"
+baseurl: ""
+
+# Uncomment to show a contact address in the theme footer.
+# email: you@example.com
+
+theme: minima
+
+# minima 2.5 uses pre-module Sass syntax; don't warn about the theme's own code.
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .bundle
