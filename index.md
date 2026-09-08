@@ -1,6 +1,6 @@
 ---
 layout: default
-image: /assets/images/holding.jpg
+image: /assets/images/ocb_002.jpg
 image_alt: One Cross Baker
 ---
 
