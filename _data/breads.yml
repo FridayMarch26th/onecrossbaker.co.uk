@@ -1,0 +1,43 @@
+# Breads listed on the Important information page (info.md).
+#
+# Keep this in step with the actual recipe — it's the allergen record
+# customers rely on. The page only shows `name` and `contains`;
+# `ingredients` is kept here as the record for labels,
+# with allergens in **double asterisks** as UK labelling rules expect.
+#
+# `contains` uses the names of the 14 UK major allergens:
+#   celery, gluten (say which cereal: wheat, rye, barley, oats,
+#   spelt...), crustaceans, eggs, fish, lupin, milk, molluscs,
+#   mustard, tree nuts (say which), peanuts, sesame, soya,
+#   sulphur dioxide/sulphites.
+#
+# Example:
+#
+# - name: Country sourdough
+#   ingredients: >-
+#     Strong white **wheat** flour, water, sea salt.
+#   contains:
+#     - Gluten (wheat)
+
+# Ingredients are listed heaviest first, from the overall formula on
+# each bake sheet (starter/levain flour and water counted in).
+
+- name: FG Special
+  ingredients: >-
+    White **wheat** flour, water, wholemeal **rye** flour, salt.
+  contains:
+    - Gluten (wheat, rye)
+
+- name: Seeded sourdough
+  ingredients: >-
+    White **wheat** flour, water, sunflower seeds, wholemeal **rye** flour,
+    flaxseed, **sesame** seeds, salt.
+  contains:
+    - Gluten (wheat, rye)
+    - Sesame
+
+- name: 90% Rye
+  ingredients: >-
+    Wholemeal **rye** flour, water, white **wheat** flour, sea salt.
+  contains:
+    - Gluten (rye, wheat)

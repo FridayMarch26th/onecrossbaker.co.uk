@@ -67,6 +67,46 @@ body {
 
 .holding__text p:last-child { margin-bottom: 0; }
 
+/* Content pages (variant: page) — smaller logo. */
+
+.holding--page .holding__image {
+  max-width: 7rem;
+  margin-bottom: 1.5rem;
+}
+
+.holding__text h2 {
+  margin: 2.5rem 0 0.75rem;
+  font-size: 1.625rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.holding__text strong { color: var(--ink); font-weight: 600; }
+
+.allergens {
+  margin: 0 auto 1rem;
+  border-collapse: collapse;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.allergens th,
+.allergens td {
+  padding: 0.45rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid var(--muted);
+}
+
+.allergens thead th {
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.allergens tbody th { color: var(--ink); font-weight: 600; }
+.allergens td { color: var(--muted); }
+
 .holding__social {
   margin: 2.25rem 0 0;
 }
@@ -98,6 +138,16 @@ body {
 .roundel:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
+}
+
+.holding__info {
+  margin: 1.25rem 0 0;
+}
+
+/* Small footer links: Important Info (home page) and Home (other pages). */
+.holding__info,
+.holding__home-link {
+  font-size: 0.9375rem;
 }
 
 .holding__contact {

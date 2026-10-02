@@ -11,7 +11,7 @@ baseurl: ""
 instagram: onecrossbaker
 
 # Site-wide default image. index.md can override it with its own `image:`.
-image: /assets/images/holding.jpg
+image: /assets/images/ocb_002.jpg
 
 # No theme gem — the whole site is _layouts/default.html + assets/css/style.css.
 
